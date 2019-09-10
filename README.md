@@ -80,7 +80,7 @@ myObject.tw { it.doSomething() }
 
 3. **Logging `Any?` type**
 
-No more `.toString()` calls on objects you want to log. UltimateLogger **can log everything***:
+No more `.toString()` calls on objects you want to log. UltimateLogger **can log everything**:
 
 ```kotlin
 ALog.d(1)
