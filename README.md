@@ -78,23 +78,19 @@ myObject?.let {it.doSomething()} ?: Log.w(TAG, "object is null")
 myObject.tw { it.doSomething() }
 ```
 
-3. **Logging without message**
+3. **Logging `Any?` type**
 
-Ever debugged and wanted to check only if some method executed by logging something inside its body? Probably it finished like this:
+No more `.toString()` calls on objects you want to log. UltimateLogger **can log everything***:
+
 ```kotlin
-fun someMethod() {
-    Log.e("FGFDSGS", "][;[];][;]")
-    someLogic()
-}
+ALog.d(1)
+ALog.e(2f)
+ALog.v(Date())
+ALog.wtf((null as String?)) // Objects of nullable types are safe to log!
+ALog.e() // Empty message? No problem.
 ```
-
-UltimateLogger simplifies that:
-```kotlin
-ALog.e()
-```
-
-In UltimateLogger **you can set logging method name, class name, file name or line number by default**, so you don't have to remember about logging method name or class name in tag.
-
+**Result:**
+![Logging Any? result](https://i.imgur.com/xpnUtFX.png)
 
 ## License
 
