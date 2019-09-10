@@ -55,11 +55,11 @@ ALogInitializer.destroy()
 
 ## Some advanced features:
 1. **Fully customizable tag**:
-As I have shown before: `ALogInitializer.init(...)` method take TagSettings object as argument:
+As I have shown before: `ALogInitializer.init(...)` method takes TagSettings object as argument:
 
 ![TagSettings data structure](https://i.imgur.com/oARBKaw.png)
 
-If you set `shouldLogClassName` of `tagSettings` flag to `true`, you will see class name before message in every line logged. `shouldLogFileNameAndLineNum` have cool feature. If you set this flag `true`, you will see in logcat hyperlink to line of code, where you have used ALog (see in example of **Quick start quide#2**).
+If you set `shouldLogClassName` of `tagSettings` flag to `true`, you will see class name before message in every line logged. `shouldLogFileNameAndLineNum` is a cool feature too. If you set this flag to `true`, you will see in Logcat a hyperlink to the line of code, where you have used ALog (see in example of **Quick start quide#2**).
 
 Optionally you can override default tag settings (you have set in ALogInitializer.init(...)) **in every specific usage of `ALog`**
 
