@@ -4,12 +4,10 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
-        maven { url 'https://maven.fabric.io/public' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'io.fabric.tools:gradle:1.29.0'
         classpath 'com.google.gms:google-services:4.3.0'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.17.0'
     }
@@ -21,7 +19,6 @@ allprojects {
         jcenter()
         mavenCentral()
         maven { url "https://jitpack.io" }
-        maven { url 'https://maven.fabric.io/public' }
     }
 }
 
