@@ -1,5 +1,5 @@
 package com.ultimatelogger.android.output
 
-import com.ultimatelogger.multiplatform.SwitchableMultiPriorityUltimateLogger
+import com.ultimatelogger.multiplatform.output.LoggingIfIsOnMultiPriorityLogger
 
-object ALog : SwitchableMultiPriorityUltimateLogger()
+object ALog : LoggingIfIsOnMultiPriorityLogger()
