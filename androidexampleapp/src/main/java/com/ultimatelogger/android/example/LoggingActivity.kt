@@ -13,12 +13,15 @@ internal class LoggingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         ALogInitializer.init(true, TagSettings(
+                shouldLogThreadName = true,
                 shouldLogFileNameAndLineNum = true,
                 shouldLogClassName = true,
                 shouldLogMethodName = true))
 
         ALog.e("12345")
         ALog.e(Exception())
+
+        Thread({ ALog.v("JvmLog.v") }, "THREAD NAMED").start()
 
         (null as String?).tw { }
     }
