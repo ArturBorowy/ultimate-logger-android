@@ -2,7 +2,7 @@ package com.ultimatelogger.android.output
 
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.mock
-import com.ultimatelogger.android.output.tag.AndroidTagCutter
+import com.ultimatelogger.android.output.tag.TagCutter
 import com.ultimatelogger.multiplatform.output.MultiPriorityLogger
 import org.junit.Before
 import org.junit.Test
@@ -11,7 +11,7 @@ import org.mockito.Mockito
 internal class TagLimitMultiPriorityLoggerTest {
 
     private val mockMultiPriorityLogger: MultiPriorityLogger = mock()
-    private val mockAndroidTagCutter: AndroidTagCutter = mock()
+    private val mockAndroidTagCutter: TagCutter = mock()
 
     private val tagLimitMultiPriorityLogger = TagLimitMultiPriorityLogger(mockMultiPriorityLogger,
             mockAndroidTagCutter)
