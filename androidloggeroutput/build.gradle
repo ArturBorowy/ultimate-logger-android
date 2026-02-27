@@ -1,19 +1,23 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdk 34
 
-
+    namespace 'com.ultimatelogger.android.output'
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 28
+        minSdk 8
+        targetSdk 34
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
     buildTypes {
@@ -33,6 +37,6 @@ dependencies {
     api project(path: ':ultimate-logger-mp')
 
     testImplementation 'junit:junit:4.13'
-    testImplementation "org.mockito:mockito-core:2.28.2"
-    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+    testImplementation 'org.mockito:mockito-core:5.22.0'
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:5.4.0'
 }
