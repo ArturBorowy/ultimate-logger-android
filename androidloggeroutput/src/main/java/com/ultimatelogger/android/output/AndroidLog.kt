@@ -30,6 +30,6 @@ internal class AndroidLog : MultiPriorityLogger {
     }
 
     override fun println(priority: Int, tag: String?, msg: String?) {
-        Log.println(priority, tag, msg)
+        Log.println(priority, tag, msg.orEmpty())
     }
 }

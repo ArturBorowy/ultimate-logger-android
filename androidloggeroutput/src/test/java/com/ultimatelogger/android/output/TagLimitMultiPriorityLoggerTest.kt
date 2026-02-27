@@ -1,7 +1,7 @@
 package com.ultimatelogger.android.output
 
-import com.nhaarman.mockitokotlin2.given
-import com.nhaarman.mockitokotlin2.mock
+import org.mockito.kotlin.given
+import org.mockito.kotlin.mock
 import com.ultimatelogger.android.output.tag.TagCutter
 import com.ultimatelogger.multiplatform.output.MultiPriorityLogger
 import org.junit.Before

@@ -12,8 +12,6 @@
     <issue id="GoogleAppIndexingApiWarning" severity="ignore" />
     // We might want to index our app later
     <issue id="InvalidPackage" severity="ignore" />
-    // Butterknife, Okio and Realm
-    <issue id="ResourceType" severity="ignore" />
     // Annotation binding
     <issue id="GradleDependency" severity="ignore" />
     <issue id="NewerVersionAvailable" severity="ignore" />
